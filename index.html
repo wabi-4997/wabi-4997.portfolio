@@ -1,80 +1,187 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <style>
-    body {
-      background-color: #ffd6e6;
-    }
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>わびのポートフォリオ</title>
-  </head>
-  <body>
-    <h1>わび</h1>
+    <meta name="description" content="わびのイラスト・動画制作などの作品を紹介するポートフォリオです。">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <h2>About</h2>
-    <p>
-      イラスト制作、アニメーション制作、動画制作が好きです。Web制作に興味があります。
-    </p>
+<body>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>名前：わび</li>
-      <li>居住地：関東</li>
-      <li>得意なこと：イラスト, 動画編集</li>
-      <li>活動理念：自分の「好き」を最大限落とし込む</li>
-    </ul>
+    <!-- ヘッダー -->
+    <header class="header">
+        <a href="#" class="logo">WABI</a>
 
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>ツール</th>
-        <td>iPad, MacBookAir</td>
-      </tr>
-      <tr>
-        <th>アプリ</th>
-        <td>Procreate, Clip Studio, Alight Motion, Premiere Pro</td>
-      </tr>
-    </table>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#works">Works</a>
+            <a href="#history">History</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <h3>Works</h3>
-    <ul>
-      <li><a href="https://www.pixiv.net/users/117618237">pixiv</a></li>
-      <li><a href="https://www.tiktok.com/@wabiwabi4997?_r=1&_t=ZS-95J2uWtqlAF">TikTok</a></li>
-    </ul>
-    <h4>　オリジナル作品</h4>
-    <img src="卒業.PNG" alt="卒業" width="400">
-    <p>
-      卒業
-    </p>
-    <img src="あのときの君.png" alt="あのときの君" width="400">
-    <p>
-      『RADデザイングランプリ』応募作品<br>あのときの君
-    </p>
-    
+    <main>
 
-    <h3>History</h3>
-    <table>
-      <tr>
-        <th>2023 年</th>
-        <td>デジタルイラスト制作開始</td>
-      </tr>
-      <tr>
-        <th>2025 年</th>
-        <td><a href="https://zen.ac.jp/">ZEN大学</a> 入学</td>
-      </tr>
-      <tr>
-        <th>2026 年</th>
-        <td>『RADデザイングランプリ』応募、落選</td>
-      </tr>
-    </table>
+        <!-- メインビジュアル -->
+        <section class="hero">
+            <p class="hero-subtitle">MY CREATIVE PORTFOLIO</p>
+            <h1>Hello, I'm <span>Wabi.</span></h1>
+            <p>
+                イラスト・アニメーション・動画制作など、<br>
+                自分の「好き」を形にしています。
+            </p>
+            <a href="#about" class="hero-button">Explore more ↓</a>
+        </section>
 
-    <h3>Contact</h3>
-    <ul>
-      <li><a href="https://www.pixiv.net/users/117618237">pixiv</a></li>
-    </ul>
+        <!-- About -->
+        <section id="about" class="section">
+            <p class="section-number">01 / ABOUT</p>
+            <h2>About Me</h2>
 
-  </body>
+            <p class="about-text">
+                イラスト制作、アニメーション制作、動画制作が好きです。
+                Web制作にも興味があり、さまざまな表現方法を学んでいます。
+            </p>
+
+            <div class="profile-box">
+                <h3>Profile</h3>
+                <ul class="profile-list">
+                    <li><span>NAME</span>わび</li>
+                    <li><span>AREA</span>関東</li>
+                    <li><span>INTEREST</span>イラスト・動画編集</li>
+                    <li><span>CONCEPT</span>自分の「好き」を最大限落とし込む</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <p class="section-number">02 / SKILLS</p>
+            <h2>Skills</h2>
+
+            <div class="skill-container">
+                <div class="skill-card">
+                    <h3>Devices</h3>
+                    <p>iPad / MacBook Air</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Applications</h3>
+                    <p>
+                        Procreate<br>
+                        Clip Studio<br>
+                        Alight Motion<br>
+                        Premiere Pro
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works -->
+        <section id="works" class="section">
+            <p class="section-number">03 / WORKS</p>
+            <h2>Works</h2>
+
+            <p class="section-description">
+                これまでに制作した作品を紹介します。
+            </p>
+
+            <div class="works-container">
+
+                <article class="work-card">
+                    <img src="卒業.PNG" alt="オリジナル作品 卒業">
+                    <div class="work-info">
+                        <p class="work-category">ILLUSTRATION</p>
+                        <h3>卒業</h3>
+                        <p>オリジナル作品</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="あのときの君.png" alt="あのときの君">
+                    <div class="work-info">
+                        <p class="work-category">ILLUSTRATION</p>
+                        <h3>あのときの君</h3>
+                        <p>RADデザイングランプリ応募作品</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="sns-links">
+                <a href="https://www.pixiv.net/users/117618237"
+                   target="_blank" rel="noopener noreferrer">pixiv ↗</a>
+
+                <a href="https://www.tiktok.com/@wabiwabi4997"
+                   target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            </div>
+        </section>
+
+        <!-- Currently Learning -->
+        <section id="learning" class="section">
+            <p class="section-number">04 / LEARNING</p>
+            <h2>Currently Learning</h2>
+
+            <p class="about-text">
+                現在興味を持っていることや、
+                これから挑戦してみたいことを紹介します。
+            </p>
+
+            <div class="learning-box">
+                <span>01</span>
+                <p>Web制作・Webデザイン</p>
+                <span>02</span>
+                <p>新しいイラスト表現</p>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="section">
+            <p class="section-number">05 / HISTORY</p>
+            <h2>History</h2>
+
+            <div class="history-list">
+                <div class="history-item">
+                    <span>2023</span>
+                    <p>デジタルイラスト制作開始</p>
+                </div>
+
+                <div class="history-item">
+                    <span>2025</span>
+                    <p>ZEN大学 入学</p>
+                </div>
+
+                <div class="history-item">
+                    <span>2026</span>
+                    <p>RADデザイングランプリ応募</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <p class="section-number">06 / CONTACT</p>
+            <h2>Contact</h2>
+
+            <p>
+                作品や活動については、こちらからご覧いただけます。
+            </p>
+
+            <a href="https://www.pixiv.net/users/117618237"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-button">
+                Visit my pixiv ↗
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 WABI All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
